@@ -8,7 +8,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["user_id", "password"],
+                    "required": [
+                        "user_id",
+                        "password"
+                    ],
                     "properties": {
                         "user_id": {
                             "title": "User ID",
@@ -25,7 +28,7 @@
                         "ui:widget": "password"
                     },
                     "ui:order": [
-                        "user_id", 
+                        "user_id",
                         "password"
                     ]
                 }
@@ -39,7 +42,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["username", "password"],
+                    "required": [
+                        "username",
+                        "password"
+                    ],
                     "properties": {
                         "username": {
                             "title": "Username",
@@ -49,14 +55,14 @@
                             "title": "Password",
                             "type": "string"
                         }
-                    }    
+                    }
                 },
                 "ui_schema": {
                     "password": {
                         "ui:widget": "password"
                     },
                     "ui:order": [
-                        "username", 
+                        "username",
                         "password"
                     ]
                 }
@@ -70,7 +76,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["email", "password"],
+                    "required": [
+                        "email",
+                        "password"
+                    ],
                     "properties": {
                         "email": {
                             "title": "Email",
@@ -80,7 +89,7 @@
                             "title": "Password",
                             "type": "string"
                         }
-                    }    
+                    }
                 },
                 "ui_schema": {
                     "password": {
@@ -102,9 +111,9 @@
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
                     "required": [
-                        "auth_method", 
-                        "last_name", 
-                        "passcode", 
+                        "auth_method",
+                        "last_name",
+                        "passcode",
                         "memorable_word"
                     ],
                     "properties": {
@@ -118,7 +127,9 @@
                             "oneOf": [
                                 {
                                     "title": "Card number",
-                                    "required": ["card_number"],
+                                    "required": [
+                                        "card_number"
+                                    ],
                                     "properties": {
                                         "card_number": {
                                             "title": "Card number",
@@ -129,7 +140,9 @@
                                 },
                                 {
                                     "title": "Membership number",
-                                    "required": ["membership_number"],
+                                    "required": [
+                                        "membership_number"
+                                    ],
                                     "properties": {
                                         "membership_number": {
                                             "title": "Membership number",
@@ -140,7 +153,10 @@
                                 },
                                 {
                                     "title": "Sort code and account number",
-                                    "required": ["sort_code", "account_number"],
+                                    "required": [
+                                        "sort_code",
+                                        "account_number"
+                                    ],
                                     "properties": {
                                         "sort_code": {
                                             "title": "Sort code",
@@ -226,7 +242,11 @@
             "credentials_schema": {
                 "json_schema": {
                     "type": "object",
-                    "required": ["region", "account_number", "password"],
+                    "required": [
+                        "region",
+                        "account_number",
+                        "password"
+                    ],
                     "properties": {
                         "region": {
                             "title": "Region",
@@ -333,7 +353,7 @@
                         "account_number",
                         "password"
                     ]
-                }    
+                }
             }
         },
         {
@@ -344,7 +364,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["email", "password"],
+                    "required": [
+                        "email",
+                        "password"
+                    ],
                     "properties": {
                         "email": {
                             "title": "Email",
@@ -354,7 +377,7 @@
                             "title": "Password",
                             "type": "string"
                         }
-                    }    
+                    }
                 },
                 "ui_schema": {
                     "email": {
@@ -378,7 +401,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["email", "password"],
+                    "required": [
+                        "email",
+                        "password"
+                    ],
                     "properties": {
                         "email": {
                             "title": "Email",
@@ -412,7 +438,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["api_key", "private_key"],
+                    "required": [
+                        "api_key",
+                        "private_key"
+                    ],
                     "properties": {
                         "api_key": {
                             "title": "API key",
@@ -440,7 +469,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["api_key", "secret_key"],
+                    "required": [
+                        "api_key",
+                        "secret_key"
+                    ],
                     "properties": {
                         "api_key": {
                             "title": "API key",
@@ -468,7 +500,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["api_key", "private_key"],
+                    "required": [
+                        "api_key",
+                        "private_key"
+                    ],
                     "properties": {
                         "api_key": {
                             "title": "API key",
@@ -478,7 +513,7 @@
                             "title": "Private key",
                             "type": "string"
                         }
-                    }    
+                    }
                 },
                 "ui_schema": {
                     "ui:order": [
@@ -496,7 +531,10 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["sheet_key", "google_api_credentials"],
+                    "required": [
+                        "sheet_key",
+                        "google_api_credentials"
+                    ],
                     "properties": {
                         "sheet_key": {
                             "title": "Sheet identifier",
@@ -527,7 +565,12 @@
                 "json_schema": {
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "type": "object",
-                    "required": ["username", "birth_date", "online_password", "secret_number"],
+                    "required": [
+                        "username",
+                        "birth_date",
+                        "online_password",
+                        "secret_number"
+                    ],
                     "properties": {
                         "username": {
                             "title": "Username",
@@ -569,7 +612,112 @@
             "id": "dummy_uk",
             "description": "Dummy financial provider (UK)",
             "website_url": "http://www.dummy.com",
-            "credentials_schema": {}
+            "credentials_schema": {
+                "json_schema": {
+                    "type": "object",
+                    "required": [
+                        "region",
+                        "account_number",
+                        "password"
+                    ],
+                    "properties": {
+                        "region": {
+                            "title": "Region",
+                            "type": "string",
+                            "enum": [
+                                "ca-alpesprovence",
+                                "ca-alsace-vosges",
+                                "ca-anjou-maine",
+                                "ca-aquitaine",
+                                "ca-atlantique-vendee",
+                                "ca-briepicardie",
+                                "ca-centrest",
+                                "ca-centrefrance",
+                                "ca-centreloire",
+                                "ca-centreouest",
+                                "ca-cb",
+                                "ca-cmds",
+                                "ca-charente-perigord",
+                                "ca-corse",
+                                "ca-cotesdarmor",
+                                "ca-des-savoie",
+                                "ca-finistere",
+                                "ca-franchecomte",
+                                "ca-guadeloupe",
+                                "ca-illeetvilaine",
+                                "ca-languedoc",
+                                "ca-loirehauteloire",
+                                "ca-lorraine",
+                                "ca-martinique",
+                                "ca-morbihan",
+                                "ca-norddefrance",
+                                "ca-nord-est",
+                                "ca-nmpNord",
+                                "ca-normandie",
+                                "ca-normandie-seine",
+                                "ca-paris",
+                                "ca-pcaProvence",
+                                "ca-pyrenees-gascogne",
+                                "ca-reunion",
+                                "ca-sudrhonealpes",
+                                "ca-sudmed",
+                                "ca-toulouse31",
+                                "ca-tourainepoitou",
+                                "ca-valdefrance"
+                            ],
+                            "enumNames": [
+                                "Alpes Provences",
+                                "Alsace Vosges",
+                                "Anjou Maine",
+                                "Aquitaine",
+                                "Atlantique Vendee",
+                                "Brie Picardie",
+                                "Centre Est",
+                                "Centre France",
+                                "Centre Loire",
+                                "Centre Ouest",
+                                "Champagne Bourgogne",
+                                "Charente Maritime Deux Sevres",
+                                "Charente Perigord",
+                                "Corse",
+                                "Cote d'Armor",
+                                "Savoie",
+                                "Finistere",
+                                "Franche Conte",
+                                "Guadeloupe",
+                                "Ille et Vilaine",
+                                "Languedoc",
+                                "Loire et Haute Loire",
+                                "Lorraine",
+                                "Martinique Guyane",
+                                "Morbihan",
+                                "Nordde France",
+                                "Nord Est",
+                                "Midi Pyrenees",
+                                "Normandie",
+                                "Normandie Seine",
+                                "Paris Ile de France",
+                                "Cote d'Azur",
+                                "Pyrenees Gascogne",
+                                "Reunion",
+                                "Sud Rhone Alpes",
+                                "Sud Mediterrannee",
+                                "Toulouse",
+                                "Touraine Poitou",
+                                "Val de France"
+                            ]
+                        },
+                        "account_number": {
+                            "title": "Account number",
+                            "type": "string"
+                        },
+                        "password": {
+                            "title": "Password",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
         }
     ]
 }
